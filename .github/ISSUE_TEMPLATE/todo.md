@@ -9,7 +9,7 @@ assignees: ''
 
 ## Todo
 ---
-**Task: ** 
-**Expected Time: **
-**Description: **
-**Assignees: **
+**Task:** 
+**Expected Time:** 
+**Description:** 
+**Assignees:**
