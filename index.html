@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <details>
+        <details style="align-self: flex-start; margin-top: 0.5em; margin-left: 1em;">
             <summary id="toc">
                 <i>Table of Contents:</i>
             </summary>
@@ -34,6 +34,12 @@
                 </ul>
             </nav>
         </details>
+
+        <div style="margin-left: auto; margin-right: 1em; align-self: flex-start;">
+            <button type="button" style="width: 3em;">Print</button>
+            <button type="button" style="width: 3em;">Save</button>
+        </div>
+
     </header>
 
     <main>
@@ -103,8 +109,12 @@
         <section>
             <h2 id="comments">Comments and Questions</h2>
             <ol>
-                <li>Why is Bobbert still on the team? - Bob</li>
-                <li>Wow - Bobbert</li>
+                <li>
+                    Why is Bobbert still on the team? - Bob
+                </li>
+                <li>
+                    Wow - Bobbert
+                </li>
             </ol>
         </section>
 
@@ -160,7 +170,9 @@
 
                 <label for="date">Today's Date: </label>
                 <input type="date" id="date" name="date">
-                <p><input type="submit" value="submit"></p>
+                <br><br>
+                <input type="submit" value="submit">
+                <br><br>
             </fieldset>
         </form>
 
@@ -183,19 +195,27 @@
                 <textarea id="feedback-text" rows="4" cols="50"></textarea>
 
                 <br>
-                <label for="confirm">Are you sure all info is accurate? </label>
-                <input list="sure" id="confirm" name="confirm">
+                <p>
+                    <label for="confirm">Are you sure all info is accurate? </label>
+                    <input list="sure" id="confirm" name="confirm">
+                </p>
                 <datalist id="sure">
                     <option value="Yes">
                     <option value="No">
                 </datalist>
 
-                <p><input type="submit" value="submit"></p>
+                <br><br>
+                <input type="submit" value="submit">
+                <br><br>
             </fieldset>
         </form>
 
         <p> back to <a href="#top">top</a></p>
     </footer>
+
+    <p class="hidden-note">
+        This is a secret!
+    </p>
 </body>
 
 </html>
