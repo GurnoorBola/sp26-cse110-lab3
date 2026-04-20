@@ -1,0 +1,27 @@
+body {
+    background-color: navy;
+}
+
+h1 {
+    color: rgba(247, 202, 24, 1);
+}
+
+h2 {
+    color: #C0C0C0;
+}
+
+h3 {
+    color: hsl(210, 100%, 70%);
+}
+
+/* paragraphs */
+p {
+    /* fallback variable */
+    font-family: "Helvetica", "Trebuchet MS", "Verdana", sans-serif;
+    color: color-mix(in srgb, white, transparent 20%);
+}
+
+/* links */
+a {
+    color: color(display-p3 0 0.5 1);
+}
