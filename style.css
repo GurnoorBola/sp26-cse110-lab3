@@ -1,9 +1,16 @@
 body {
     background-color: navy;
+    padding: 0.2in;
 }
 
 h1 {
     color: rgba(247, 202, 24, 1);
+    background-color: black;
+    height: 5vh;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 1em;
 }
 
 h2 {
@@ -19,6 +26,9 @@ p {
     /* fallback variable */
     font-family: "Helvetica", "Trebuchet MS", "Verdana", sans-serif;
     color: color-mix(in srgb, white, transparent 20%);
+    font-size: 11pt;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 /* links */
