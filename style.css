@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: navy;
     padding: 0.2in 0.2in 0.2in 0.2in;
@@ -33,8 +37,31 @@ button {
     line-height: 1.5;
 }
 
+button:hover {
+    cursor: pointer;
+}
 
-details:hover {
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+input[type="date"]:hover {
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+summary:hover {
     cursor: pointer;
     color: rgba(247, 202, 24, 1);
 }
