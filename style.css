@@ -31,6 +31,12 @@ header {
     gap: 1.5rem;
 }
 
+header div {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+}
+
 button {
     font-family: "Helvetica", "Trebuchet MS", "Verdana", sans-serif;
     font-size: 1.1rem;
@@ -146,4 +152,44 @@ a:hover {
 
 a:active {
     font-size: 1.2em;
+}
+
+#images {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem 2rem;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 2.5rem;
+}
+
+#images h2 {
+    grid-column: span 2;
+}
+
+/* Responsive Media Query */
+@media screen {
+    body {
+        padding: 0.1in;
+    }
+
+    #images {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 10px;
+    }
+
+    #images h2 {
+        grid-column: span 2;
+    }
+
+    img,
+    video {
+        max-width: 100%;
+        height: auto !important;
+    }
+
+    textarea {
+        width: 100%;
+    }
 }
