@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Notes</title>
     <meta name="author" content="Gurnoor">
     <meta name="description" content="Sample meeting notes site to learn html">
     <link rel="icon" href="favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <details>
-            <summary>
+        <details style="align-self: flex-start; margin-top: 0.5em; margin-left: 1em;">
+            <summary id="toc">
                 <i>Table of Contents:</i>
             </summary>
             <nav>
-                <ul>
+                <ul id="toc-sections">
                     <li><i><a href="#attendance">Attendance</a></i></li>
                     <li><i><a href="#agenda">Agenda</a></i></li>
                     <li><i><a href="#unfinished">Unfinished Business</a></i></li>
@@ -27,11 +34,17 @@
                 </ul>
             </nav>
         </details>
+
+        <div style="margin-left: auto; margin-right: 1em; align-self: flex-start;">
+            <button type="button" style="width: 3em;">Print</button>
+            <button type="button" style="width: 3em;">Save</button>
+        </div>
+
     </header>
 
     <main>
-        <h1 id="top">Meeting notes from a <em>very</em> productive team</h1>
-        <h2> <i>4/12/2026</i> </h2>
+        <h1>Meeting notes from a <em>very</em> productive team</h1>
+        <h2 style="text-align: center;"> <i>4/12/2026</i> </h2>
 
         <section>
             <div>
@@ -96,13 +109,17 @@
         <section>
             <h2 id="comments">Comments and Questions</h2>
             <ol>
-                <li>Why is Bobbert still on the team? - Bob</li>
-                <li>Wow - Bobbert</li>
+                <li>
+                    Why is Bobbert still on the team? - Bob
+                </li>
+                <li>
+                    Wow - Bobbert
+                </li>
             </ol>
         </section>
 
-        <section>
-            <h2 id="images">Meeting images</h2>
+        <section id="images">
+            <h2 id="image heading">Meeting images</h2>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Fempty-meeting-room-office_21085-10471.jpg&f=1&nofb=1&ipt=68b988a366ff170b4be889799eabeb35b5b25970e7e01c183f5b19201802829c"
                 alt="" height="200">
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fboardtech.com.au%2Fwp-content%2Fuploads%2F2022%2F07%2FStandard-Whiteboard-1800x1200-with-Accessories.jpg&f=1&nofb=1&ipt=7f091d230d8c0aacb01d2e338a5e2ace35064dd2f86a8ba01ecc5371318c126a"
@@ -153,7 +170,9 @@
 
                 <label for="date">Today's Date: </label>
                 <input type="date" id="date" name="date">
-                <p><input type="submit" value="submit"></p>
+                <br><br>
+                <input type="submit" value="submit">
+                <br><br>
             </fieldset>
         </form>
 
@@ -176,19 +195,27 @@
                 <textarea id="feedback-text" rows="4" cols="50"></textarea>
 
                 <br>
-                <label for="confirm">Are you sure all info is accurate? </label>
-                <input list="sure" id="confirm" name="confirm">
+                <p>
+                    <label for="confirm">Are you sure all info is accurate? </label>
+                    <input list="sure" id="confirm" name="confirm">
+                </p>
                 <datalist id="sure">
                     <option value="Yes">
                     <option value="No">
                 </datalist>
 
-                <p><input type="submit" value="submit"></p>
+                <br><br>
+                <input type="submit" value="submit">
+                <br><br>
             </fieldset>
         </form>
 
         <p> back to <a href="#top">top</a></p>
     </footer>
+
+    <p class="hidden-note">
+        This is a secret!
+    </p>
 </body>
 
 </html>
